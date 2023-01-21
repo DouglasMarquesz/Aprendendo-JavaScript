@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title> <!-- Comentario em HTML -->
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+    <p>Iniciando aprendizado de JavaScript</p>
+    <p>Aprendendo a utilizar <strong>DOM</strong> - Document Object Model</p>
+    <div id="msg">Clique em min</div>
+    <script>
+        //window.document.write(window.document.charset+"</br>")
+        //window.document.write(window.document.URL+"</br>")
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        paragrafo.style.color = 'blue'
+        window.document.write('Conteúdo Text: '+ paragrafo.innerText+'</br>')
+        window.document.write('Conteúdo HTML: '+ paragrafo.innerHTML)
+
+        var divmsg = window.document.getElementById("msg")
+        divmsg.style.backgroundColor = "black"
+        divmsg.innerText = "Estou aguardando..."
+    </script>
+</body>
+
+<style>
+    body {
+        background-color: #dddddd; /*Comentario em CSS*/
+        color: #444444;
+        font: normal 12pt Arial;
+    }
+</style>
+</html>
