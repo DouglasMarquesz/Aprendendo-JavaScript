@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title> <!-- Comentario em HTML -->
+</head>
+<body>
+    <h1>Exercicio 3</h1>
+    <p>Iniciando aprendizado de JavaScript</p>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Ola <strong>${nome},</strong> Seu nome tem ${nome.length} letras.</br>`)
+
+        document.write(`Seu nome em maiúsculo é <strong>${nome.toUpperCase()}</strong></br>`)
+        document.write(`Seu nome em minúsculo é <strong>${nome.toLowerCase()}</strong></br>`)
+        
+        var valor = Number.parseFloat(window.prompt('Digite um valor'))
+        valor = valor.toFixed(2).replace('.',',')
+        valor = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(valor)
+</script>
+</body>
+
+<style>
+    body {
+        background-color: #dddddd; /*Comentario em CSS*/
+        color: #444444;
+        font: normal 12pt Arial;
+    }
+</style>
+</html>
